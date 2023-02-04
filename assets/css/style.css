@@ -1442,8 +1442,9 @@ p {
     margin-left: 5px;
   }
   html body .content .section1 .container .left .buttons .button1 a #behancelogo {
-    width: 21.23px;
-    height: 13.27px;
+    margin-bottom: -5px;
+    width: 21px;
+    height: 21px;
   }
   html body .content .section1 .container .left .buttons .button1 a #linkedinlogo {
     width: 17.32px;
@@ -2214,7 +2215,7 @@ p {
   }
   html body .content .section4 .container .down .second .left {
     width: 229px;
-    height: 414px;
+    height: 630px;
     text-align: center;
     background: rgba(12, 12, 12, 0.6);
     border: 1px solid #191919;
@@ -2495,8 +2496,9 @@ p {
     margin-left: 5px;
   }
   html body .content .section1 .container .left .buttons .button1 a #behancelogo {
-    width: 21.23px;
-    height: 13.27px;
+    margin-bottom: -5px;
+    width: 21px;
+    height: 21px;
   }
   html body .content .section1 .container .left .buttons .button1 a #linkedinlogo {
     width: 17.32px;
