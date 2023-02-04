@@ -1,0 +1,3606 @@
+@font-face {
+  font-family: "Lemon Bold";
+  src: url("../fonts/LemonMilkProBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon Bold Italic";
+  src: url("../fonts/LemonMilkProBoldItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon Medium";
+  src: url("../fonts/LemonMilkProMedium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon Medium Italic";
+  src: url("../fonts/LemonMilkProMediumItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon Regular";
+  src: url("../fonts/LemonMilkProRegular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon Regular Italic";
+  src: url("../fonts/LemonMilkProRegularItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon UltraLight";
+  src: url("../fonts/LemonMilkProUltraLight.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon UltraLight Italic";
+  src: url("../fonts/LemonMilkProUltraLightItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Zacbelx Extrabold";
+  src: url("../fonts/zacbelx-extrabold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Zacbelx Medium";
+  src: url("../fonts/zacbelx-medium.ttf") format("truetype");
+}
+@-webkit-keyframes imgfirst {
+  0%, 100% {
+    transform: rotate(0deg) translateY(6px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateY(6px) rotate(-360deg);
+  }
+}
+@keyframes imgfirst {
+  0%, 100% {
+    transform: rotate(0deg) translateY(6px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateY(6px) rotate(-360deg);
+  }
+}
+@-webkit-keyframes bounce_513 {
+  0%, 100% {
+    transform: translateY(-17%);
+    -webkit-animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+@keyframes bounce_513 {
+  0%, 100% {
+    transform: translateY(-17%);
+    -webkit-animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  text-decoration: none;
+  color: white;
+}
+
+#loader-wrapper.loader-off {
+  display: none !important;
+}
+
+#loader-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: 15000;
+  overflow: hidden;
+}
+#loader-wrapper .loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+#loader-wrapper .loader .jelly {
+  --uib-size: 80px;
+  --uib-speed: 0.7s;
+  --uib-color: #FFFF27;
+  position: relative;
+  height: calc(var(--uib-size) / 2);
+  width: var(--uib-size);
+  filter: url("#uib-jelly-ooze");
+  -webkit-animation: rotate72317 calc(var(--uib-speed) * 2) linear infinite;
+          animation: rotate72317 calc(var(--uib-speed) * 2) linear infinite;
+}
+#loader-wrapper .loader .jelly::before,
+#loader-wrapper .loader .jelly::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 25%;
+  width: 50%;
+  height: 100%;
+  background: var(--uib-color);
+  border-radius: 100%;
+}
+#loader-wrapper .loader .jelly::before {
+  -webkit-animation: shift-left var(--uib-speed) ease infinite;
+          animation: shift-left var(--uib-speed) ease infinite;
+}
+#loader-wrapper .loader .jelly::after {
+  -webkit-animation: shift-right var(--uib-speed) ease infinite;
+          animation: shift-right var(--uib-speed) ease infinite;
+}
+#loader-wrapper .loader .jelly-maker {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+@-webkit-keyframes rotate72317 {
+  0%, 49.999%, 100% {
+    transform: none;
+  }
+  50%, 99.999% {
+    transform: rotate(90deg);
+  }
+}
+@keyframes rotate72317 {
+  0%, 49.999%, 100% {
+    transform: none;
+  }
+  50%, 99.999% {
+    transform: rotate(90deg);
+  }
+}
+@-webkit-keyframes shift-left {
+  0%, 100% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: scale(0.65) translateX(-75%);
+  }
+}
+@keyframes shift-left {
+  0%, 100% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: scale(0.65) translateX(-75%);
+  }
+}
+@-webkit-keyframes shift-right {
+  0%, 100% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: scale(0.65) translateX(75%);
+  }
+}
+@keyframes shift-right {
+  0%, 100% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: scale(0.65) translateX(75%);
+  }
+}
+
+@media only screen and (min-width: 1071px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  html body {
+    font-family: "Lemon Regular";
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+  }
+  html body .content .nav {
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+  html body .content .nav .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 0px;
+    padding-top: 15px;
+    margin-bottom: 20px;
+  }
+  html body .content .nav .container .left {
+    margin-top: 5px;
+  }
+  html body .content .nav .container .left #logofirst {
+    display: none;
+    width: 119.12px;
+    height: 19.83px;
+  }
+  html body .content .nav .container .left #logosecond {
+    display: none;
+    width: 119.12px;
+    height: 19.83px;
+  }
+  html body .content .nav .container .left .containerBo .containerBox1 {
+    transition: 0.3s;
+    background: url(../img/logo.png);
+    width: 119.12px;
+    height: 19.83px;
+    background-size: cover;
+  }
+  html body .content .nav .container .left .containerBo .containerBox1:hover {
+    background: url(../img/logoyellow.png);
+    background-size: cover;
+  }
+  html body .content .nav .container .mid {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 7px;
+  }
+  html body .content .nav .container .mid a {
+    color: rgba(255, 255, 39, 0.3);
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    font-family: "Lemon Regular";
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0px 20px;
+  }
+  html body .content .nav .container .highlightTextOut a {
+    color: rgb(255, 255, 255);
+    font-family: "Lemon Regular";
+    font-size: 14px;
+    text-shadow: none;
+  }
+  html body .content .nav .container .highlightTextOut a:before {
+    font-family: "Lemon Regular";
+    font-size: 14px;
+    position: absolute;
+    background-color: black;
+    color: rgb(255, 255, 39);
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    overflow: hidden;
+    content: attr(alt);
+    transition: all 0.3s;
+    padding-top: 9.9px;
+    transform: scale(0);
+    opacity: 0;
+  }
+  html body .content .nav .container .highlightTextOut a:hover:before {
+    font-family: "Lemon Medium";
+    font-size: 14px;
+    transform: scale(1);
+    opacity: 1;
+  }
+  html body .content .nav .container .right {
+    padding-top: 10px;
+  }
+  html body .content .nav .container .right a {
+    font-family: "Lemon Regular";
+    font-size: 14px;
+    padding: 8px 18px 10px 18px;
+    border: 2px solid #FDFDFD;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+  }
+  html body .content .nav .container .right a:hover {
+    color: #000000;
+    background-color: #FFFF27;
+    border: 2px solid #FFFF27;
+    font-family: "Lemon Medium";
+  }
+  html body .content .section1 {
+    background-image: url(../img/bg1banner.png);
+    background-size: 100%;
+  }
+  html body .content .section1 .container {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  html body .content .section1 .container .left .text1 p {
+    font-family: "Lemon Medium";
+    font-size: 12px;
+    color: #FFFF27;
+    line-height: 17px;
+    letter-spacing: 1.72em;
+    margin-top: 150px;
+  }
+  html body .content .section1 .container .left .text2 p {
+    font-family: "Zacbelx Extrabold";
+    font-size: 130px;
+    line-height: 186px;
+    color: #FFFFFF;
+    margin-top: -30px;
+    margin-bottom: -25px;
+  }
+  html body .content .section1 .container .left .text3 p {
+    max-width: 546px;
+    font-family: "Lemon Regular";
+    font-size: 14px;
+    line-height: 30px;
+    color: #C5CFD5;
+  }
+  html body .content .section1 .container .left .buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+  }
+  html body .content .section1 .container .left .buttons .button1 {
+    margin-right: 40px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a {
+    background: #FFFF27;
+    border-radius: 3px;
+    font-family: "Lemon Regular";
+    font-size: 14px;
+    line-height: 20px;
+    color: #050505;
+    padding: 10px 13px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a span {
+    margin-top: -3px;
+    margin-bottom: -4px;
+    overflow: hidden;
+    margin-left: 5px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a #behancelogo {
+    margin-bottom: -5px;
+    width: 21px;
+    height: 21px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a #linkedinlogo {
+    width: 17.32px;
+    height: 16.76px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a #dribblelogo {
+    margin-bottom: -5px;
+    width: 21px;
+    height: 21px;
+    margin-bottom: -4px;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume {
+    position: relative;
+    padding: 10px 13px;
+    border-radius: 3px;
+    transition: all 0.2s;
+    background-color: #FFFF27;
+    margin-right: 40px;
+    font-family: "Lemon Regular";
+    font-size: 14px;
+    color: #050505;
+    margin-top: -8px;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume a {
+    color: #050505;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+    background-color: #fff;
+  }
+  html body .content .section1 .container .left .downpart {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 135px;
+  }
+  html body .content .section1 .container .left .downpart .left p {
+    font-family: "Lemon Bold";
+    font-size: 48px;
+    line-height: 67px;
+    color: #FFFFFF;
+    margin: 0px;
+  }
+  html body .content .section1 .container .left .downpart .mid img {
+    width: 4px;
+    height: 48px;
+    margin: 0px 45px;
+    margin-top: 10px;
+  }
+  html body .content .section1 .container .left .downpart .right p {
+    font-family: "Lemon UltraLight";
+    font-size: 34px;
+    color: #FFFFFF;
+    margin: 0px;
+    margin-top: -18px;
+  }
+  html body .content .section1 .container .right {
+    margin-top: 25px;
+  }
+  html body .content .section1 .container .right img {
+    -webkit-animation: imgfirst 6s linear infinite;
+            animation: imgfirst 6s linear infinite;
+    width: 500px;
+  }
+  html body .content #mainmodal {
+    font-family: Arial;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  html body .content #mainmodal .modalconent {
+    background-image: url(../img/breakingnews.png);
+    background-size: 100%;
+    width: 100%;
+  }
+  html body .content #mainmodal .marquee {
+    font-family: "Zacbelx Extrabold";
+    color: #080707;
+    padding: 20px;
+    font-size: 60px;
+  }
+  html body .content .section2 {
+    background-image: url(../img/bgservices.png);
+    background-size: 100% 100%;
+    background-color: #151515;
+  }
+  html body .content .section2 .container {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section2 .container .texts {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  html body .content .section2 .container .texts .text1 p {
+    font-family: "Lemon Medium";
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 1.72em;
+    color: #FFFF27;
+    margin-top: 100px;
+    margin-bottom: 25px;
+  }
+  html body .content .section2 .container .texts .text2 img {
+    margin: 0px;
+    width: 526.98px;
+    height: 101.97px;
+  }
+  html body .content .section2 .container .texts .text3 {
+    width: 586px;
+    margin: 0 auto;
+    font-family: "LEMON Regular";
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: #C5CFD5;
+    margin-top: 26px;
+    margin-bottom: 44px;
+  }
+  html body .content .section2 .container .innersection .first {
+    width: 1060PX;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px;
+  }
+  html body .content .section2 .container .innersection .first .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  html body .content .section2 .container .innersection .first .box .left {
+    display: flex;
+    flex-direction: row;
+  }
+  html body .content .section2 .container .innersection .first .box .left p {
+    font-family: "Lemon Regular";
+    font-size: 34px;
+    color: white;
+  }
+  html body .content .section2 .container .innersection .first .box .left .img1service {
+    display: block;
+    margin-top: 40px;
+    margin-left: 15px;
+    width: 27px;
+    height: 33.2px;
+  }
+  html body .content .section2 .container .innersection .first .box .left .img2service {
+    display: none;
+    margin-top: 40px;
+    margin-left: 15px;
+    width: 27px;
+    height: 33.2px;
+  }
+  html body .content .section2 .container .innersection .first .box .right p {
+    display: none;
+    width: 502px;
+    font-family: "Lemon Regular";
+    font-size: 14px;
+    line-height: 30px;
+    color: #9A9A9A;
+  }
+  html body .content .section2 .container .innersection .first .box .right button {
+    margin-top: 35px;
+    background-color: transparent;
+    cursor: crosshair;
+    border: none;
+  }
+  html body .content .section2 .container .innersection .first .box .right button img {
+    width: 42px;
+  }
+  html body .content .section2 .container .innersection .first .lineservice {
+    width: 1060px;
+    border: 2px solid #434343;
+  }
+  html body .content .section2 .container .innersection .first #lineserviices4 {
+    margin-bottom: 116px;
+  }
+  html body .content .section2 .container .innersection .firsttablet {
+    display: none;
+  }
+  html body .content .section2 .container .innersection .firstmobile {
+    display: none;
+  }
+  html body .content .section3 .container {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 96px;
+  }
+  html body .content .section3 .container .up {
+    margin-bottom: 81px;
+  }
+  html body .content .section3 .container .up .up1 p {
+    font-family: "Lemon Medium";
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 1.72em;
+    color: #FFFF27;
+    margin-bottom: 25px;
+  }
+  html body .content .section3 .container .up .down1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .up .down1 .left img {
+    width: 524.95px;
+  }
+  html body .content .section3 .container .up .down1 .right p {
+    font-family: "Lemon Regular";
+    font-size: 14px;
+    line-height: 30px;
+    color: #C5CFD5;
+    max-width: 473px;
+    margin-top: 30px;
+  }
+  html body .content .section3 .container .down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  html body .content .section3 .container .down .box .up {
+    margin-bottom: 0px;
+  }
+  html body .content .section3 .container .down .box .up button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+  }
+  html body .content .section3 .container .down .box .up button img {
+    width: 515px;
+    height: 515px;
+  }
+  html body .content .section3 .container .down .box .up button .overlay {
+    position: absolute;
+    width: 515px;
+    height: 515px;
+    opacity: 0;
+    transition: 0.5s ease;
+    background: rgba(255, 246, 39, 0.75);
+    border-radius: 3px;
+    margin-top: -520px;
+  }
+  html body .content .section3 .container .down .box .up button .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    margin: 230px 145px;
+  }
+  html body .content .section3 .container .down .box .up button .text img {
+    width: 233.5px;
+    height: 62px;
+  }
+  html body .content .section3 .container .down .box .up button:hover .overlay {
+    opacity: 1;
+  }
+  html body .content .section3 .container .down .box .up .modal1 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    opacity: 0;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    transition: opacity 3s ease-in-out;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 {
+    width: 1120px;
+    margin: 0 auto;
+    background: #131313;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 {
+    width: 1060px;
+    margin: 0 auto;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left {
+    display: flex;
+    flex-direction: row;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left a {
+    font-family: "Lemon Medium";
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left .changetovideo {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    margin-right: 50px;
+    font-family: "Lemon Medium";
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left .changetoimages {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    font-family: "Lemon Medium";
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFF27;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .right button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .right button img {
+    width: 18px;
+    height: 18px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left img {
+    width: 737px;
+    height: 737px;
+    margin-bottom: 30px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project11image {
+    width: 737px;
+    height: 737px;
+    display: block;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project12image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project13image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project14image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project15image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right {
+    max-width: 280px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .text1 p {
+    font-family: "Lemon Bold";
+    font-size: 28px;
+    line-height: 39px;
+    color: #FFFFFF;
+    margin: 0px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .text2 p {
+    font-family: "Lemon Regular";
+    font-size: 12px;
+    line-height: 30px;
+    color: #C5CFD5;
+    margin-top: 17px;
+    margin-bottom: 75px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .selections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .selections button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    padding: 0px;
+    margin: 3px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .selections button img {
+    width: 85px;
+    height: 85px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .downparts {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .downparts .ups p {
+    font-family: "Lemon Regular";
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(197, 207, 213, 0.7);
+    margin: 0px;
+    margin-bottom: 24px;
+    margin-top: 200px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .downparts .downs img {
+    width: 60px;
+    height: 60px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart {
+    display: none;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left video {
+    width: 737px;
+    height: 737px;
+    margin-bottom: 30px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project11video {
+    width: 737px;
+    height: 737px;
+    display: block;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project12video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project13video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project14video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project15video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right {
+    max-width: 280px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .text1 p {
+    font-family: "Lemon Bold";
+    font-size: 28px;
+    line-height: 39px;
+    color: #FFFFFF;
+    margin: 0px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .text2 p {
+    font-family: "Lemon Regular";
+    font-size: 12px;
+    line-height: 30px;
+    color: #C5CFD5;
+    margin-top: 17px;
+    margin-bottom: 75px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .selections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .selections button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    padding: 0px;
+    margin: 3px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .selections button video {
+    width: 85px;
+    height: 85px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .downparts {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .downparts .ups p {
+    font-family: "Lemon Regular";
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(197, 207, 213, 0.7);
+    margin: 0px;
+    margin-bottom: 24px;
+    margin-top: 200px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .downparts .downs img {
+    width: 60px;
+    height: 60px;
+  }
+  html body .content .section3 .container .down .box .down {
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section3 .container .down .box .down .ups p {
+    font-family: "Lemon Medium";
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  html body .content .section3 .container .down .box .down .downs p {
+    font-family: "Lemon Regular";
+    font-size: 14px;
+    line-height: 20px;
+    color: #A4ADB3;
+    margin-top: 6px;
+    margin-bottom: 40px;
+  }
+  html body .content .section4 {
+    background-image: url(../img/bgcareer.png);
+    background-size: 100% 100%;
+    background-color: #151515;
+  }
+  html body .content .section4 .container {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section4 .container .up {
+    display: flex;
+    flex-direction: row;
+  }
+  html body .content .section4 .container .up .left {
+    flex: 0.2;
+  }
+  html body .content .section4 .container .up .left img {
+    width: 350px;
+    margin-left: -170px;
+    margin-right: -80px;
+  }
+  html body .content .section4 .container .up .left .onpart {
+    display: none;
+  }
+  html body .content .section4 .container .up .left .offpart {
+    display: none;
+  }
+  html body .content .section4 .container .up .mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex: 2;
+    margin-top: 100px;
+  }
+  html body .content .section4 .container .up .mid .text1 p {
+    font-family: "Lemon Medium";
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 1.72em;
+    color: #FFFF27;
+    margin-bottom: 40px;
+  }
+  html body .content .section4 .container .up .mid .text2 img {
+    width: 608px;
+    height: 111px;
+    margin-bottom: 40px;
+  }
+  html body .content .section4 .container .up .mid .text3 {
+    max-width: 605;
+    margin: 0 auto;
+  }
+  html body .content .section4 .container .up .mid .text3 p {
+    max-width: 658px;
+    font-family: "Lemon Regular";
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: #C5CFD5;
+    margin-top: -20px;
+  }
+  html body .content .section4 .container .up .right {
+    flex: 0.2;
+    text-align: end;
+    margin-top: 50px;
+  }
+  html body .content .section4 .container .up .right .switch {
+    --secondary-container: #FFFF27;
+    --primary: #050505;
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.7em;
+    height: 1.8em;
+  }
+  html body .content .section4 .container .up .right .switch input {
+    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  html body .content .section4 .container .up .right .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #D1D1D1;
+    transition: 0.2s;
+    border-radius: 30px;
+  }
+  html body .content .section4 .container .up .right .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 20px;
+    left: 0.2em;
+    bottom: 0.2em;
+    background-color: #050505;
+    transition: 0.4s;
+  }
+  html body .content .section4 .container .up .right input:checked + .slider::before {
+    background-color: var(--primary);
+  }
+  html body .content .section4 .container .up .right input:checked + .slider {
+    background-color: var(--secondary-container);
+  }
+  html body .content .section4 .container .up .right input:focus + .slider {
+    box-shadow: 0 0 1px var(--secondary-container);
+  }
+  html body .content .section4 .container .up .right input:checked + .slider:before {
+    transform: translateX(1.9em);
+  }
+  html body .content .section4 .container .down {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+  }
+  html body .content .section4 .container .down .first {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+  html body .content .section4 .container .down .first .left {
+    width: 341px;
+    height: 425px;
+    text-align: center;
+    margin-right: 5px;
+    background: rgba(12, 12, 12, 0.6);
+    border: 1px solid #191919;
+    border-radius: 4px;
+    transition: 1s ease-in-out;
+  }
+  html body .content .section4 .container .down .first .left:hover {
+    background: linear-gradient(270deg, #161616 1.05%, #0C0C0C 100%);
+  }
+  html body .content .section4 .container .down .first .left img {
+    width: 176px;
+    height: 181.5px;
+    margin-bottom: 0px;
+    margin-top: 80px;
+  }
+  html body .content .section4 .container .down .first .left p {
+    font-family: "Lemon Bold";
+    font-size: 34px;
+    line-height: 30px;
+    color: #E1E1E1;
+    margin: 0px;
+    margin-top: -20px;
+  }
+  html body .content .section4 .container .down .first .right {
+    display: flex;
+    flex-direction: column;
+    width: 714px;
+    height: 138px;
+  }
+  html body .content .section4 .container .down .first .right .text1 {
+    background: rgba(12, 12, 12, 0.6);
+    opacity: 1;
+    border: 1px solid #191919;
+    border-radius: 4px;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 5px;
+    transition: 1s ease-in-out;
+  }
+  html body .content .section4 .container .down .first .right .text1 .up {
+    margin: 0px;
+  }
+  html body .content .section4 .container .down .first .right .text1 .up p {
+    font-family: "Lemon Medium";
+    font-size: 26px;
+    line-height: 30px;
+    color: #E1E1E1;
+    margin: 0px;
+    margin-top: 39px;
+    margin-left: 23px;
+  }
+  html body .content .section4 .container .down .first .right .text1 .down {
+    margin: 0px;
+  }
+  html body .content .section4 .container .down .first .right .text1 .down p {
+    margin: 0px;
+    font-family: "Lemon Regular";
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.54);
+    margin-top: 15px;
+    margin-left: 23px;
+    margin-bottom: 23px;
+  }
+  html body .content .section4 .container .down .first .right .text1:hover {
+    background: linear-gradient(270deg, #161616 1.05%, #0C0C0C 100%);
+  }
+  html body .content .section4 .container .down .second {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-bottom: 180px;
+  }
+  html body .content .section4 .container .down .second .left {
+    width: 341px;
+    height: 854px;
+    text-align: center;
+    background: rgba(12, 12, 12, 0.6);
+    border: 1px solid #191919;
+    border-radius: 4px;
+    transition: 1s ease-in-out;
+  }
+  html body .content .section4 .container .down .second .left:hover {
+    background: linear-gradient(270deg, #161616 1.05%, #0C0C0C 100%);
+  }
+  html body .content .section4 .container .down .second .left img {
+    width: 176px;
+    height: 181.5px;
+    margin-bottom: 0px;
+    margin-top: 285.66px;
+  }
+  html body .content .section4 .container .down .second .left p {
+    font-family: "Lemon Bold";
+    font-size: 34px;
+    line-height: 30px;
+    color: #E1E1E1;
+    margin: 0px;
+    margin-top: 5px;
+  }
+  html body .content .section4 .container .down .second .right {
+    display: flex;
+    flex-direction: column;
+    width: 714px;
+    height: 138px;
+    margin-right: 5px;
+  }
+  html body .content .section4 .container .down .second .right .text1 {
+    background: rgba(12, 12, 12, 0.6);
+    border: 1px solid #191919;
+    border-radius: 4px;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 5px;
+    transition: 1s ease-in-out;
+  }
+  html body .content .section4 .container .down .second .right .text1:hover {
+    background: linear-gradient(270deg, #161616 1.05%, #0C0C0C 100%);
+  }
+  html body .content .section4 .container .down .second .right .text1 .up {
+    margin: 0px;
+  }
+  html body .content .section4 .container .down .second .right .text1 .up p {
+    font-family: "Lemon Medium";
+    font-size: 26px;
+    line-height: 30px;
+    color: #E1E1E1;
+    margin: 0px;
+    margin-top: 38.5px;
+    margin-left: 23px;
+  }
+  html body .content .section4 .container .down .second .right .text1 .down {
+    margin: 0px;
+  }
+  html body .content .section4 .container .down .second .right .text1 .down p {
+    margin: 0px;
+    font-family: "Lemon Regular";
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.54);
+    margin-top: 15px;
+    margin-left: 23px;
+    margin-bottom: 23px;
+  }
+  html body .content .section5 .container {
+    max-width: 1060px;
+    margin: 0 auto;
+    margin-top: -80px;
+    margin-bottom: 0px;
+  }
+  html body .content .section5 .container #desktopquote {
+    width: 1060px;
+    margin: 0 auto;
+  }
+  html body .content .section5 .container #mobilequote {
+    display: none;
+  }
+  html body .content .section6 .container {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 105px;
+  }
+  html body .content .section6 .container .up {
+    display: flex;
+    flex-direction: row;
+  }
+  html body .content .section6 .container .up .left img {
+    width: 290px;
+    height: 48.27px;
+    margin: 0px;
+    margin-top: 58px;
+    margin-right: 145px;
+  }
+  html body .content .section6 .container .up .mid {
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section6 .container .up .mid .up p {
+    font-family: "Lemon Medium";
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin: 0px;
+    margin-bottom: 35px;
+  }
+  html body .content .section6 .container .up .mid .down {
+    margin-bottom: 66px;
+    text-align: start;
+  }
+  html body .content .section6 .container .up .mid .down p a {
+    font-family: "Lemon Regular";
+    font-size: 16px;
+    line-height: 30px;
+    color: #A4ADB3;
+    margin: 0px;
+    margin-right: 76px;
+    margin-bottom: 15px;
+    transition: all 0.2s ease-in-out;
+  }
+  html body .content .section6 .container .up .mid .down p a:hover {
+    color: #FFFF27;
+  }
+  html body .content .section6 .container .up .right {
+    margin-top: 128px;
+    margin-left: 61.5px;
+    -webkit-animation: bounce_513 1s infinite;
+            animation: bounce_513 1s infinite;
+  }
+  html body .content .section6 .container .up .right a {
+    font-family: "Lemon Bold";
+    padding: 7px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    background: #FFFF27;
+    border-radius: 3px;
+  }
+  html body .content .section6 .down {
+    text-align: center;
+  }
+  html body .content .section6 .down .line hr {
+    border: 2px solid #FFFFFF;
+    margin-bottom: 12;
+  }
+  html body .content .section6 .down .text {
+    margin: 0px;
+  }
+  html body .content .section6 .down .text p {
+    font-family: "Lemon Regular";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin: 0px;
+    margin-bottom: 11px;
+  }
+  html body .content .section6mobile {
+    display: none;
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 1070px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  html body {
+    font-family: "Lemon Regular";
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+  }
+  html body .content .nav {
+    max-width: 715px;
+    margin: 0 auto;
+  }
+  html body .content .nav .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 0px;
+    padding-top: 15px;
+    margin-bottom: 20px;
+  }
+  html body .content .nav .container .left img {
+    margin-top: 5px;
+    width: 90px;
+    height: 14.98px;
+  }
+  html body .content .nav .container .left #logofirst {
+    display: none;
+  }
+  html body .content .nav .container .left .containerBo {
+    display: none;
+  }
+  html body .content .nav .container .mid {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+  }
+  html body .content .nav .container .mid a {
+    font-family: "Lemon Medium";
+    font-size: 11px;
+    color: #FFFFFF;
+    margin: 0px 40px;
+    transition: 0.3s ease-in-out;
+  }
+  html body .content .nav .container .mid a:hover {
+    color: #FFFF27;
+  }
+  html body .content .nav .container .right {
+    padding-top: 0px;
+  }
+  html body .content .nav .container .right a {
+    font-family: "Lemon Regular";
+    font-size: 11px;
+    padding: 7px 18px;
+    border: 2px solid #FDFDFD;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+  }
+  html body .content .nav .container .right a:hover {
+    color: #FFFF27;
+    border: 2px solid #FFFF27;
+  }
+  html body .content .section1 {
+    background-image: url(../img/bg1banner.png);
+    background-size: 100% 100%;
+  }
+  html body .content .section1 .container {
+    max-width: 715px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  html body .content .section1 .container .left .text1 p {
+    font-family: "Lemon Medium";
+    font-size: 9px;
+    color: #FFFF27;
+    line-height: 13px;
+    letter-spacing: 1.72em;
+    margin-top: 80px;
+  }
+  html body .content .section1 .container .left .text2 p {
+    font-family: "Zacbelx Extrabold";
+    font-size: 90px;
+    line-height: 129px;
+    color: #FFFFFF;
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+  html body .content .section1 .container .left .text3 p {
+    max-width: 546px;
+    font-family: "Lemon Regular";
+    font-size: 10px;
+    line-height: 24px;
+    color: #C5CFD5;
+  }
+  html body .content .section1 .container .left .buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+  }
+  html body .content .section1 .container .left .buttons .button1 {
+    margin-right: 40px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a {
+    background: #FFFF27;
+    border-radius: 3px;
+    font-family: "Lemon Regular";
+    font-size: 14px;
+    line-height: 20px;
+    color: #050505;
+    padding: 10px 13px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a span {
+    margin-top: -3px;
+    margin-bottom: -4px;
+    overflow: hidden;
+    margin-left: 5px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a #behancelogo {
+    width: 21.23px;
+    height: 13.27px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a #linkedinlogo {
+    width: 17.32px;
+    height: 16.76px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a #dribblelogo {
+    width: 20.19px;
+    height: 20.2px;
+    margin-bottom: -4px;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume {
+    position: relative;
+    padding: 10px 13px;
+    border-radius: 3px;
+    transition: all 0.2s;
+    background-color: #FFFF27;
+    margin-right: 40px;
+    font-family: "Lemon Regular";
+    font-size: 14px;
+    color: #050505;
+    margin-top: -8px;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume a {
+    color: #050505;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+    background-color: #fff;
+  }
+  html body .content .section1 .container .left .downpart {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  html body .content .section1 .container .left .downpart .left p {
+    font-family: "Lemon Bold";
+    font-size: 30px;
+    line-height: 53px;
+    color: #FFFFFF;
+    margin: 0px;
+  }
+  html body .content .section1 .container .left .downpart .mid img {
+    width: 2px;
+    height: 40px;
+    margin: 0px 23px;
+    margin-top: 10px;
+  }
+  html body .content .section1 .container .left .downpart .right p {
+    font-family: "Lemon UltraLight";
+    font-size: 25px;
+    line-height: 35px;
+    color: #FFFFFF;
+    margin: 0px;
+    margin-top: 10px;
+  }
+  html body .content .section1 .container .right img {
+    width: 363.71px;
+  }
+  html body .content #mainmodal {
+    font-family: Arial;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  html body .content #mainmodal .modalconent {
+    background-image: url(../img/breakingnews.png);
+    background-size: 100%;
+    width: 100%;
+  }
+  html body .content #mainmodal .marquee {
+    font-family: "Zacbelx Extrabold";
+    color: #080707;
+    padding: 5px;
+    font-size: 42px;
+  }
+  html body .content .section2 {
+    background-image: url(../img/bgservices.png);
+    background-size: 100% 100%;
+    background-color: #151515;
+  }
+  html body .content .section2 .container {
+    max-width: 715px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section2 .container .texts {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  html body .content .section2 .container .texts .text1 p {
+    font-family: "Lemon Medium";
+    font-size: 9px;
+    line-height: 13px;
+    letter-spacing: 1.72em;
+    color: #FFFF27;
+    margin-top: 70px;
+    margin-bottom: 22px;
+  }
+  html body .content .section2 .container .texts .text2 img {
+    margin: 0px;
+    width: 371.94px;
+    height: 71.97px;
+  }
+  html body .content .section2 .container .texts .text3 {
+    width: 378px;
+    margin: 0 auto;
+    font-family: "LEMON Regular";
+    font-size: 10px;
+    line-height: 24px;
+    text-align: center;
+    color: #C5CFD5;
+    margin-top: 26px;
+    margin-bottom: 44px;
+  }
+  html body .content .section2 .container .innersection .first {
+    display: none;
+  }
+  html body .content .section2 .container .innersection .firstmobile {
+    display: none;
+  }
+  html body .content .section2 .container .innersection .firsttablet {
+    display: flex;
+    width: 715px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px;
+  }
+  html body .content .section2 .container .innersection .firsttablet .boxtablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 17px;
+  }
+  html body .content .section2 .container .innersection .firsttablet .boxtablet .lefttablet {
+    display: flex;
+    flex-direction: row;
+  }
+  html body .content .section2 .container .innersection .firsttablet .boxtablet .lefttablet p {
+    font-family: "Lemon Regular";
+    font-size: 22px;
+    color: white;
+    margin: 30px 0px;
+  }
+  html body .content .section2 .container .innersection .firsttablet .boxtablet .lefttablet .img1servicetablet {
+    display: block;
+    margin-top: 35px;
+    margin-left: 15px;
+    width: 19px;
+    height: 23.36px;
+  }
+  html body .content .section2 .container .innersection .firsttablet .boxtablet .lefttablet .img2servicetablet {
+    display: none;
+    margin-top: 35px;
+    margin-left: 15px;
+    width: 19px;
+    height: 23.36px;
+  }
+  html body .content .section2 .container .innersection .firsttablet .boxtablet .righttablet p {
+    display: none;
+    width: 331px;
+    font-family: "Lemon Regular";
+    font-size: 10px;
+    line-height: 24px;
+    color: #9A9A9A;
+  }
+  html body .content .section2 .container .innersection .firsttablet .boxtablet .righttablet button {
+    margin-top: 35px;
+    background-color: transparent;
+    cursor: crosshair;
+    border: none;
+  }
+  html body .content .section2 .container .innersection .firsttablet .boxtablet .righttablet button img {
+    width: 34px;
+  }
+  html body .content .section2 .container .innersection .firsttablet .lineservicetablet {
+    width: 714px;
+    border: 2px solid #434343;
+  }
+  html body .content .section2 .container .innersection .firsttablet #lineserviices4tablet {
+    margin-bottom: 15px;
+  }
+  html body .content .section3 .container {
+    max-width: 715px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+  }
+  html body .content .section3 .container .up {
+    margin-bottom: 81px;
+  }
+  html body .content .section3 .container .up .up1 p {
+    font-family: "Lemon Medium";
+    font-size: 9px;
+    line-height: 13px;
+    letter-spacing: 1.72em;
+    color: #FFFF27;
+    margin-bottom: 25px;
+  }
+  html body .content .section3 .container .up .down1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .up .down1 .left img {
+    width: 366.01px;
+  }
+  html body .content .section3 .container .up .down1 .right p {
+    font-family: "Lemon Regular";
+    font-size: 10px;
+    line-height: 24px;
+    color: #C5CFD5;
+    max-width: 290px;
+  }
+  html body .content .section3 .container .down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  html body .content .section3 .container .down .box .up {
+    margin-bottom: 0px;
+  }
+  html body .content .section3 .container .down .box .up button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+  }
+  html body .content .section3 .container .down .box .up button img {
+    width: 330px;
+    height: 330px;
+  }
+  html body .content .section3 .container .down .box .up button .text {
+    display: none;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    margin: 230px 145px;
+  }
+  html body .content .section3 .container .down .box .up button .text img {
+    width: 233.5px;
+    height: 62px;
+  }
+  html body .content .section3 .container .down .box .up button:hover .overlay {
+    opacity: 1;
+  }
+  html body .content .section3 .container .down .box .up .modal1 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    opacity: 0;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    transition: opacity 3s ease-in-out;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 {
+    width: 1120px;
+    margin: 0 auto;
+    background: #131313;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 {
+    width: 715px;
+    margin: 0 auto;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left {
+    display: flex;
+    flex-direction: row;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left a {
+    font-family: "Lemon Medium";
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left .changetovideo {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    margin-right: 50px;
+    font-family: "Lemon Medium";
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left .changetoimages {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    font-family: "Lemon Medium";
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFF27;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .right button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .right button img {
+    width: 18px;
+    height: 18px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left img {
+    width: 737px;
+    height: 737px;
+    margin-bottom: 30px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project11image {
+    width: 737px;
+    height: 737px;
+    display: block;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project12image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project13image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project14image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project15image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right {
+    max-width: 280px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .text1 p {
+    font-family: "Lemon Bold";
+    font-size: 28px;
+    line-height: 39px;
+    color: #FFFFFF;
+    margin: 0px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .text2 p {
+    font-family: "Lemon Regular";
+    font-size: 12px;
+    line-height: 30px;
+    color: #C5CFD5;
+    margin-top: 17px;
+    margin-bottom: 75px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .selections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .selections button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    padding: 0px;
+    margin: 3px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .selections button img {
+    width: 85px;
+    height: 85px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .downparts {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .downparts .ups p {
+    font-family: "Lemon Regular";
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(197, 207, 213, 0.7);
+    margin: 0px;
+    margin-bottom: 24px;
+    margin-top: 200px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .downparts .downs img {
+    width: 60px;
+    height: 60px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart {
+    display: none;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left video {
+    width: 737px;
+    height: 737px;
+    margin-bottom: 30px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project11video {
+    width: 737px;
+    height: 737px;
+    display: block;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project12video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project13video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project14video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project15video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right {
+    max-width: 280px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .text1 p {
+    font-family: "Lemon Bold";
+    font-size: 28px;
+    line-height: 39px;
+    color: #FFFFFF;
+    margin: 0px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .text2 p {
+    font-family: "Lemon Regular";
+    font-size: 12px;
+    line-height: 30px;
+    color: #C5CFD5;
+    margin-top: 17px;
+    margin-bottom: 75px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .selections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .selections button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    padding: 0px;
+    margin: 3px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .selections button video {
+    width: 85px;
+    height: 85px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .downparts {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .downparts .ups p {
+    font-family: "Lemon Regular";
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(197, 207, 213, 0.7);
+    margin: 0px;
+    margin-bottom: 24px;
+    margin-top: 200px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .downparts .downs img {
+    width: 60px;
+    height: 60px;
+  }
+  html body .content .section3 .container .down .box .down {
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section3 .container .down .box .down .ups p {
+    font-family: "Lemon Medium";
+    font-size: 10px;
+    line-height: 14px;
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  html body .content .section3 .container .down .box .down .downs p {
+    font-family: "Lemon Regular";
+    font-size: 9px;
+    line-height: 13px;
+    color: #A4ADB3;
+    margin-top: 6px;
+    margin-bottom: 40px;
+  }
+  html body .content .section4 {
+    background-image: url(../img/bgcareer.png);
+    background-size: 100% 100%;
+    background-color: #151515;
+  }
+  html body .content .section4 .container {
+    max-width: 715px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section4 .container .up {
+    display: flex;
+    flex-direction: row;
+  }
+  html body .content .section4 .container .up .left {
+    flex: 0.2;
+    margin-right: -65px;
+  }
+  html body .content .section4 .container .up .left img {
+    width: 200px;
+    margin-left: -70px;
+  }
+  html body .content .section4 .container .up .left .onpart {
+    display: none;
+  }
+  html body .content .section4 .container .up .left .offpart {
+    display: none;
+  }
+  html body .content .section4 .container .up .mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex: 2;
+    margin-top: 80px;
+  }
+  html body .content .section4 .container .up .mid .text1 p {
+    font-family: "Lemon Medium";
+    font-size: 9px;
+    line-height: 13px;
+    letter-spacing: 1.72em;
+    color: #FFFF27;
+    margin-bottom: 40px;
+  }
+  html body .content .section4 .container .up .mid .text2 img {
+    width: 430px;
+    margin-bottom: 20px;
+  }
+  html body .content .section4 .container .up .mid .text3 {
+    max-width: 423;
+    margin: 0 auto;
+  }
+  html body .content .section4 .container .up .mid .text3 p {
+    max-width: 423px;
+    font-family: "Lemon Regular";
+    font-size: 10px;
+    line-height: 30px;
+    text-align: center;
+    color: #C5CFD5;
+    margin-top: -20px;
+  }
+  html body .content .section4 .container .up .right {
+    flex: 0.2;
+    text-align: end;
+    margin-top: 50px;
+  }
+  html body .content .section4 .container .up .right .switch {
+    --secondary-container: #FFFF27;
+    --primary: #050505;
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24.49px;
+  }
+  html body .content .section4 .container .up .right .switch input {
+    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  html body .content .section4 .container .up .right .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #D1D1D1;
+    transition: 0.2s;
+    border-radius: 30px;
+  }
+  html body .content .section4 .container .up .right .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.2em;
+    width: 1.2em;
+    border-radius: 20px;
+    left: 0.2em;
+    bottom: 0.1em;
+    background-color: #050505;
+    transition: 0.4s;
+  }
+  html body .content .section4 .container .up .right input:checked + .slider::before {
+    background-color: var(--primary);
+  }
+  html body .content .section4 .container .up .right input:checked + .slider {
+    background-color: var(--secondary-container);
+  }
+  html body .content .section4 .container .up .right input:focus + .slider {
+    box-shadow: 0 0 1px var(--secondary-container);
+  }
+  html body .content .section4 .container .up .right input:checked + .slider:before {
+    transform: translateX(1.3em);
+  }
+  html body .content .section4 .container .down {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  html body .content .section4 .container .down .first {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+  html body .content .section4 .container .down .first .left {
+    width: 229px;
+    height: 309px;
+    text-align: center;
+    margin-right: 5px;
+    background: rgba(12, 12, 12, 0.6);
+    border: 1px solid #191919;
+    border-radius: 4px;
+  }
+  html body .content .section4 .container .down .first .left img {
+    width: 115px;
+    height: 115px;
+    margin-bottom: 0px;
+    margin-top: 80px;
+  }
+  html body .content .section4 .container .down .first .left p {
+    font-family: "Lemon Bold";
+    font-size: 19px;
+    line-height: 30px;
+    color: #E1E1E1;
+    margin: 0px;
+    margin-top: -20px;
+  }
+  html body .content .section4 .container .down .first .right {
+    display: flex;
+    flex-direction: column;
+    width: 481px;
+    height: 100px;
+  }
+  html body .content .section4 .container .down .first .right .text1 {
+    background: #0C0C0C;
+    opacity: 0.6;
+    border: 1px solid #191919;
+    border-radius: 4px;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 5px;
+  }
+  html body .content .section4 .container .down .first .right .text1 .up {
+    margin: 0px;
+  }
+  html body .content .section4 .container .down .first .right .text1 .up p {
+    font-family: "Lemon Medium";
+    font-size: 17px;
+    line-height: 30px;
+    color: #E1E1E1;
+    margin: 0px;
+    margin-top: 20px;
+    margin-left: 23px;
+  }
+  html body .content .section4 .container .down .first .right .text1 .down {
+    margin: 0px;
+  }
+  html body .content .section4 .container .down .first .right .text1 .down p {
+    margin: 0px;
+    font-family: "Lemon Regular";
+    font-size: 10px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.54);
+    margin-top: 0px;
+    margin-left: 23px;
+    margin-bottom: 20px;
+  }
+  html body .content .section4 .container .down .second {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-bottom: 180px;
+  }
+  html body .content .section4 .container .down .second .left {
+    width: 229px;
+    height: 414px;
+    text-align: center;
+    background: rgba(12, 12, 12, 0.6);
+    border: 1px solid #191919;
+    border-radius: 4px;
+  }
+  html body .content .section4 .container .down .second .left img {
+    width: 85px;
+    height: 89px;
+    margin-bottom: 0px;
+    margin-top: 165.66px;
+  }
+  html body .content .section4 .container .down .second .left p {
+    font-family: "Lemon Bold";
+    font-size: 19px;
+    line-height: 30px;
+    color: #E1E1E1;
+    margin: 0px;
+    margin-top: 5px;
+  }
+  html body .content .section4 .container .down .second .right {
+    display: flex;
+    flex-direction: column;
+    width: 481px;
+    height: 100px;
+    margin-right: 5px;
+  }
+  html body .content .section4 .container .down .second .right .text1 {
+    background: #0C0C0C;
+    opacity: 0.6;
+    border: 1px solid #191919;
+    border-radius: 4px;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 5px;
+  }
+  html body .content .section4 .container .down .second .right .text1 .up {
+    margin: 0px;
+  }
+  html body .content .section4 .container .down .second .right .text1 .up p {
+    font-family: "Lemon Medium";
+    font-size: 17px;
+    line-height: 30px;
+    color: #E1E1E1;
+    margin: 0px;
+    margin-top: 20px;
+    margin-left: 23px;
+  }
+  html body .content .section4 .container .down .second .right .text1 .down {
+    margin: 0px;
+  }
+  html body .content .section4 .container .down .second .right .text1 .down p {
+    margin: 0px;
+    font-family: "Lemon Regular";
+    font-size: 10px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.54);
+    margin-top: 0px;
+    margin-left: 23px;
+    margin-bottom: 19px;
+  }
+  html body .content .section5 .container {
+    max-width: 714px;
+    margin: 0 auto;
+    margin-top: -80px;
+    margin-bottom: 0px;
+  }
+  html body .content .section5 .container #desktopquote {
+    width: 715px;
+    margin: 0 auto;
+  }
+  html body .content .section5 .container #mobilequote {
+    display: none;
+  }
+  html body .content .section6 .container {
+    max-width: 715px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  html body .content .section6 .container .up {
+    display: flex;
+    flex-direction: row;
+  }
+  html body .content .section6 .container .up .left img {
+    width: 146px;
+    margin: 0px;
+    margin-top: 35px;
+    margin-right: 100px;
+  }
+  html body .content .section6 .container .up .mid {
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section6 .container .up .mid .up p {
+    font-family: "Lemon Medium";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+  html body .content .section6 .container .up .mid .down {
+    margin-bottom: 35px;
+    text-align: start;
+    width: 148px;
+  }
+  html body .content .section6 .container .up .mid .down p {
+    margin: 0px;
+  }
+  html body .content .section6 .container .up .mid .down p a {
+    font-family: "Lemon Regular";
+    font-size: 10px;
+    line-height: 30px;
+    color: #A4ADB3;
+    margin: 0px;
+    margin-bottom: 0px;
+    transition: all 0.2s ease-in-out;
+  }
+  html body .content .section6 .container .up .mid .down p a:hover {
+    color: #9A9A9A;
+  }
+  html body .content .section6 .container .up #secondmid {
+    margin-left: 70px;
+  }
+  html body .content .section6 .container .up .right {
+    margin-top: 50px;
+    margin-left: 61.5px;
+  }
+  html body .content .section6 .container .up .right a {
+    font-family: "Lemon Bold";
+    padding: 7px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    background: #FFFF27;
+    border-radius: 3px;
+  }
+  html body .content .section6 .down {
+    text-align: center;
+  }
+  html body .content .section6 .down .line hr {
+    border: 2px solid #FFFFFF;
+    margin-bottom: 10px;
+  }
+  html body .content .section6 .down .text {
+    margin: 0px;
+  }
+  html body .content .section6 .down .text p {
+    font-family: "Lemon Regular";
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 13px;
+    color: #FFFFFF;
+    margin: 0px;
+    margin-bottom: 11px;
+  }
+  html body .content .section6mobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 720px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  html body {
+    font-family: "Lemon Regular";
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+  }
+  html body .content .nav {
+    display: none;
+    max-width: 330px;
+    margin: 0 auto;
+  }
+  html body .content .nav .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 0px;
+    padding-top: 15px;
+    margin-bottom: 20px;
+  }
+  html body .content .nav .container .left img {
+    margin-top: 5px;
+    width: 78.52px;
+  }
+  html body .content .nav .container .left .containerBo {
+    display: none;
+  }
+  html body .content .nav .container .mid {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+  }
+  html body .content .nav .container .mid a {
+    font-family: "Lemon Medium";
+    font-size: 11px;
+    color: #FFFFFF;
+    margin: 0px 40px;
+    transition: 0.3s ease-in-out;
+  }
+  html body .content .nav .container .mid a:hover {
+    color: #FFFF27;
+  }
+  html body .content .nav .container .right {
+    padding-top: 0px;
+  }
+  html body .content .nav .container .right a {
+    font-family: "Lemon Regular";
+    font-size: 11px;
+    padding: 7px 18px;
+    border: 2px solid #FDFDFD;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+  }
+  html body .content .nav .container .right a:hover {
+    color: #FFFF27;
+    border: 2px solid #FFFF27;
+  }
+  html body .content .section1 {
+    background-image: url(../img/bg1banner.png);
+    background-size: 100% 100%;
+  }
+  html body .content .section1 .container {
+    max-width: 330px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  html body .content .section1 .container .left .text1 p {
+    font-family: "Lemon Medium";
+    font-size: 7px;
+    color: #FFFF27;
+    line-height: 10px;
+    letter-spacing: 1.72em;
+    margin-top: 70px;
+  }
+  html body .content .section1 .container .left .text2 p {
+    font-family: "Zacbelx Extrabold";
+    font-size: 70px;
+    line-height: 100px;
+    color: #FFFFFF;
+    margin-top: -10px;
+    margin-bottom: -10px;
+  }
+  html body .content .section1 .container .left .text3 p {
+    max-width: 299px;
+    font-family: "Lemon Regular";
+    font-size: 9px;
+    line-height: 24px;
+    color: #C5CFD5;
+  }
+  html body .content .section1 .container .left .buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+  }
+  html body .content .section1 .container .left .buttons .button1 {
+    margin-right: 40px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a {
+    background: #FFFF27;
+    border-radius: 3px;
+    font-family: "Lemon Regular";
+    font-size: 14px;
+    line-height: 20px;
+    color: #050505;
+    padding: 10px 13px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a span {
+    margin-top: -3px;
+    margin-bottom: -4px;
+    overflow: hidden;
+    margin-left: 5px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a #behancelogo {
+    width: 21.23px;
+    height: 13.27px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a #linkedinlogo {
+    width: 17.32px;
+    height: 16.76px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a #dribblelogo {
+    width: 20.19px;
+    height: 20.2px;
+    margin-bottom: -4px;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume {
+    position: relative;
+    padding: 10px 13px;
+    border-radius: 3px;
+    transition: all 0.2s;
+    background-color: #FFFF27;
+    margin-right: 40px;
+    font-family: "Lemon Regular";
+    font-size: 14px;
+    color: #050505;
+    margin-top: -8px;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume a {
+    color: #050505;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+    background-color: #fff;
+  }
+  html body .content .section1 .container .left .downpart {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+  html body .content .section1 .container .left .downpart .left p {
+    font-family: "Lemon Bold";
+    font-size: 30px;
+    line-height: 53px;
+    color: #FFFFFF;
+    margin: 0px;
+  }
+  html body .content .section1 .container .left .downpart .mid img {
+    width: 2px;
+    height: 35px;
+    margin: 0px 23px;
+    margin-top: 10px;
+  }
+  html body .content .section1 .container .left .downpart .right {
+    display: flex;
+  }
+  html body .content .section1 .container .left .downpart .right p {
+    display: flex;
+    font-family: "Lemon UltraLight";
+    font-size: 22px;
+    line-height: 31px;
+    color: #FFFFFF;
+    margin: 0px;
+    margin-top: 10px;
+  }
+  html body .content .section1 .container .right {
+    display: none;
+  }
+  html body .content .section1 .container .right img {
+    width: 363.71px;
+  }
+  html body .content #mainmodal {
+    font-family: Arial;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  html body .content #mainmodal .modalconent {
+    background-image: url(../img/breakingnews.png);
+    background-size: 100%;
+    width: 100%;
+  }
+  html body .content #mainmodal .marquee {
+    font-family: "Zacbelx Extrabold";
+    color: #080707;
+    padding: 5px;
+    font-size: 30px;
+  }
+  html body .content .section2 {
+    background-image: url(../img/bgservices.png);
+    background-size: 100% 100%;
+    background-color: #151515;
+  }
+  html body .content .section2 .container {
+    max-width: 330px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section2 .container .texts {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  html body .content .section2 .container .texts .text1 p {
+    font-family: "Lemon Medium";
+    font-size: 7px;
+    line-height: 10px;
+    letter-spacing: 1.72em;
+    color: #FFFF27;
+    margin-top: 45px;
+    margin-bottom: 15px;
+  }
+  html body .content .section2 .container .texts .text2 img {
+    margin: 0px;
+    width: 299.59px;
+  }
+  html body .content .section2 .container .texts .text3 {
+    width: 300px;
+    margin: 0 auto;
+    font-family: "LEMON Regular";
+    font-size: 9px;
+    line-height: 24px;
+    text-align: center;
+    color: #C5CFD5;
+    margin-top: 26px;
+    margin-bottom: 44px;
+  }
+  html body .content .section2 .container .innersection .first {
+    display: none;
+  }
+  html body .content .section2 .container .innersection .firsttablet {
+    display: none;
+  }
+  html body .content .section2 .container .innersection .firstmobile {
+    display: flex;
+    width: 330px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px;
+  }
+  html body .content .section2 .container .innersection .firstmobile .boxmobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 17px;
+    width: 300px;
+  }
+  html body .content .section2 .container .innersection .firstmobile .boxmobile .leftmobile {
+    display: flex;
+    flex-direction: row;
+  }
+  html body .content .section2 .container .innersection .firstmobile .boxmobile .leftmobile p {
+    font-family: "Lemon Regular";
+    font-size: 22px;
+    color: white;
+    margin: 30px 0px;
+  }
+  html body .content .section2 .container .innersection .firstmobile .boxmobile .leftmobile .img1servicemobile {
+    display: block;
+    margin-top: 35px;
+    margin-left: 15px;
+    width: 19px;
+    height: 23.36px;
+  }
+  html body .content .section2 .container .innersection .firstmobile .boxmobile .leftmobile .img2servicemobile {
+    display: none;
+    margin-top: 35px;
+    margin-left: 15px;
+    width: 19px;
+    height: 23.36px;
+  }
+  html body .content .section2 .container .innersection .firstmobile .boxmobile .rightmobile1 {
+    margin: -62px 0px 0px 250px;
+  }
+  html body .content .section2 .container .innersection .firstmobile .boxmobile .rightmobile1 p {
+    display: none;
+    width: 300px;
+    font-family: "Lemon Regular";
+    font-size: 9px;
+    line-height: 24px;
+    color: #9A9A9A;
+  }
+  html body .content .section2 .container .innersection .firstmobile .boxmobile .rightmobile1 button {
+    overflow-y: auto;
+    background-color: transparent;
+    cursor: crosshair;
+    border: none;
+  }
+  html body .content .section2 .container .innersection .firstmobile .boxmobile .rightmobile1 button img {
+    width: 34px;
+    overflow: auto;
+  }
+  html body .content .section2 .container .innersection .firstmobile .boxmobile .rightmobile2 {
+    margin: -62px 0px 0px 250px;
+  }
+  html body .content .section2 .container .innersection .firstmobile .boxmobile .rightmobile2 p {
+    display: none;
+    width: 300px;
+    font-family: "Lemon Regular";
+    font-size: 9px;
+    line-height: 24px;
+    color: #9A9A9A;
+  }
+  html body .content .section2 .container .innersection .firstmobile .boxmobile .rightmobile2 button {
+    overflow-y: auto;
+    background-color: transparent;
+    cursor: crosshair;
+    border: none;
+  }
+  html body .content .section2 .container .innersection .firstmobile .boxmobile .rightmobile2 button img {
+    width: 34px;
+    overflow: auto;
+  }
+  html body .content .section2 .container .innersection .firstmobile .boxmobile .rightmobile3 {
+    margin: -62px 0px 0px 250px;
+  }
+  html body .content .section2 .container .innersection .firstmobile .boxmobile .rightmobile3 p {
+    display: none;
+    width: 300px;
+    font-family: "Lemon Regular";
+    font-size: 9px;
+    line-height: 24px;
+    color: #9A9A9A;
+  }
+  html body .content .section2 .container .innersection .firstmobile .boxmobile .rightmobile3 button {
+    overflow-y: auto;
+    background-color: transparent;
+    cursor: crosshair;
+    border: none;
+  }
+  html body .content .section2 .container .innersection .firstmobile .boxmobile .rightmobile3 button img {
+    width: 34px;
+    overflow: auto;
+  }
+  html body .content .section2 .container .innersection .firstmobile .boxmobile .rightmobile4 {
+    margin: -62px 0px 0px 250px;
+  }
+  html body .content .section2 .container .innersection .firstmobile .boxmobile .rightmobile4 p {
+    display: none;
+    width: 300px;
+    font-family: "Lemon Regular";
+    font-size: 9px;
+    line-height: 24px;
+    color: #9A9A9A;
+  }
+  html body .content .section2 .container .innersection .firstmobile .boxmobile .rightmobile4 button {
+    overflow-y: auto;
+    background-color: transparent;
+    cursor: crosshair;
+    border: none;
+  }
+  html body .content .section2 .container .innersection .firstmobile .boxmobile .rightmobile4 button img {
+    width: 34px;
+    overflow: auto;
+  }
+  html body .content .section2 .container .innersection .firstmobile .lineservicemobile {
+    width: 330px;
+    border: 2px solid #434343;
+  }
+  html body .content .section2 .container .innersection .firstmobile #lineserviices4mobile {
+    margin-bottom: 15px;
+  }
+  html body .content .section3 .container {
+    max-width: 330px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  html body .content .section3 .container .up {
+    margin-bottom: 25px;
+  }
+  html body .content .section3 .container .up .up1 p {
+    font-family: "Lemon Medium";
+    font-size: 7px;
+    line-height: 10px;
+    letter-spacing: 1.72em;
+    color: #FFFF27;
+    margin-bottom: 25px;
+  }
+  html body .content .section3 .container .up .down1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .up .down1 .left img {
+    width: 300px;
+  }
+  html body .content .section3 .container .up .down1 .right p {
+    font-family: "Lemon Regular";
+    font-size: 9px;
+    line-height: 24px;
+    color: #C5CFD5;
+    max-width: 290px;
+  }
+  html body .content .section3 .container .down {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  html body .content .section3 .container .down .box .up {
+    margin-bottom: 0px;
+  }
+  html body .content .section3 .container .down .box .up button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    padding: 0px;
+  }
+  html body .content .section3 .container .down .box .up button img {
+    width: 330px;
+    height: 330px;
+  }
+  html body .content .section3 .container .down .box .up button .text {
+    display: none;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    margin: 230px 145px;
+  }
+  html body .content .section3 .container .down .box .up button .text img {
+    width: 233.5px;
+    height: 62px;
+  }
+  html body .content .section3 .container .down .box .up button:hover .overlay {
+    opacity: 1;
+  }
+  html body .content .section3 .container .down .box .up .modal1 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    opacity: 0;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    transition: opacity 3s ease-in-out;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 {
+    width: 1120px;
+    margin: 0 auto;
+    background: #131313;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 {
+    width: 715px;
+    margin: 0 auto;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left {
+    display: flex;
+    flex-direction: row;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left a {
+    font-family: "Lemon Medium";
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left .changetovideo {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    margin-right: 50px;
+    font-family: "Lemon Medium";
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left .changetoimages {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    font-family: "Lemon Medium";
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFF27;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .right button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .right button img {
+    width: 18px;
+    height: 18px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left img {
+    width: 737px;
+    height: 737px;
+    margin-bottom: 30px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project11image {
+    width: 737px;
+    height: 737px;
+    display: block;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project12image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project13image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project14image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project15image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right {
+    max-width: 280px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .text1 p {
+    font-family: "Lemon Bold";
+    font-size: 28px;
+    line-height: 39px;
+    color: #FFFFFF;
+    margin: 0px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .text2 p {
+    font-family: "Lemon Regular";
+    font-size: 12px;
+    line-height: 30px;
+    color: #C5CFD5;
+    margin-top: 17px;
+    margin-bottom: 75px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .selections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .selections button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    padding: 0px;
+    margin: 3px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .selections button img {
+    width: 85px;
+    height: 85px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .downparts {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .downparts .ups p {
+    font-family: "Lemon Regular";
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(197, 207, 213, 0.7);
+    margin: 0px;
+    margin-bottom: 24px;
+    margin-top: 200px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .downparts .downs img {
+    width: 60px;
+    height: 60px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart {
+    display: none;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left video {
+    width: 737px;
+    height: 737px;
+    margin-bottom: 30px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project11video {
+    width: 737px;
+    height: 737px;
+    display: block;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project12video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project13video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project14video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project15video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right {
+    max-width: 280px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .text1 p {
+    font-family: "Lemon Bold";
+    font-size: 28px;
+    line-height: 39px;
+    color: #FFFFFF;
+    margin: 0px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .text2 p {
+    font-family: "Lemon Regular";
+    font-size: 12px;
+    line-height: 30px;
+    color: #C5CFD5;
+    margin-top: 17px;
+    margin-bottom: 75px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .selections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .selections button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    padding: 0px;
+    margin: 3px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .selections button video {
+    width: 85px;
+    height: 85px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .downparts {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .downparts .ups p {
+    font-family: "Lemon Regular";
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(197, 207, 213, 0.7);
+    margin: 0px;
+    margin-bottom: 24px;
+    margin-top: 200px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .downparts .downs img {
+    width: 60px;
+    height: 60px;
+  }
+  html body .content .section3 .container .down .box .down {
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section3 .container .down .box .down .ups p {
+    font-family: "Lemon Medium";
+    font-size: 10px;
+    line-height: 14px;
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  html body .content .section3 .container .down .box .down .downs p {
+    font-family: "Lemon Regular";
+    font-size: 9px;
+    line-height: 13px;
+    color: #A4ADB3;
+    margin-top: 6px;
+    margin-bottom: 40px;
+  }
+  html body .content .section4 {
+    background-image: url(../img/bgcareer.png);
+    background-size: 100% 100%;
+    background-color: #151515;
+  }
+  html body .content .section4 .container {
+    max-width: 330px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section4 .container .up {
+    display: flex;
+    flex-direction: row;
+  }
+  html body .content .section4 .container .up .left {
+    flex: 0.2;
+  }
+  html body .content .section4 .container .up .left img {
+    width: 100px;
+    margin-left: -50px;
+  }
+  html body .content .section4 .container .up .left .onpart {
+    display: none;
+  }
+  html body .content .section4 .container .up .left .offpart {
+    display: none;
+  }
+  html body .content .section4 .container .up .mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex: 2;
+    margin-top: 45px;
+    margin-left: -10px;
+  }
+  html body .content .section4 .container .up .mid .text1 p {
+    font-family: "Lemon Medium";
+    font-size: 7px;
+    line-height: 10px;
+    letter-spacing: 1.72em;
+    color: #FFFF27;
+    margin-bottom: 20px;
+  }
+  html body .content .section4 .container .up .mid .text2 img {
+    width: 254px;
+    margin-bottom: 20px;
+  }
+  html body .content .section4 .container .up .mid .text3 {
+    max-width: 423;
+    margin: 0 auto;
+  }
+  html body .content .section4 .container .up .mid .text3 p {
+    max-width: 254px;
+    font-family: "Lemon Regular";
+    font-size: 9px;
+    line-height: 24px;
+    text-align: center;
+    color: #C5CFD4;
+    margin-top: -20px;
+  }
+  html body .content .section4 .container .up .right {
+    flex: 0.2;
+    text-align: end;
+    margin-top: 50px;
+  }
+  html body .content .section4 .container .up .right .switch {
+    --secondary-container: #FFFF27;
+    --primary: #050505;
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 22.04px;
+  }
+  html body .content .section4 .container .up .right .switch input {
+    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  html body .content .section4 .container .up .right .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #D1D1D1;
+    transition: 0.2s;
+    border-radius: 30px;
+  }
+  html body .content .section4 .container .up .right .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.1em;
+    width: 1.1em;
+    border-radius: 20px;
+    left: 0.1em;
+    bottom: 0.05em;
+    background-color: #050505;
+    transition: 0.4s;
+  }
+  html body .content .section4 .container .up .right input:checked + .slider::before {
+    background-color: var(--primary);
+  }
+  html body .content .section4 .container .up .right input:checked + .slider {
+    background-color: var(--secondary-container);
+  }
+  html body .content .section4 .container .up .right input:focus + .slider {
+    box-shadow: 0 0 1px var(--secondary-container);
+  }
+  html body .content .section4 .container .up .right input:checked + .slider:before {
+    transform: translateX(1.3em);
+  }
+  html body .content .section4 .container .down {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 150px;
+  }
+  html body .content .section4 .container .down .first {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+  html body .content .section4 .container .down .first .left {
+    width: 330px;
+    height: 184px;
+    text-align: center;
+    background: rgba(12, 12, 12, 0.6);
+    border: 1px solid #191919;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+  }
+  html body .content .section4 .container .down .first .left img {
+    width: 110.5px;
+    height: 114px;
+    margin-bottom: 0px;
+    margin-top: 40px;
+    margin-left: 66px;
+  }
+  html body .content .section4 .container .down .first .left p {
+    font-family: "Lemon Bold";
+    font-size: 19px;
+    line-height: 30px;
+    color: #E1E1E1;
+    margin: 0px;
+    margin-top: 77px;
+    margin-left: -25px;
+  }
+  html body .content .section4 .container .down .first .right {
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section4 .container .down .first .right .text1 {
+    background: #0C0C0C;
+    background: rgba(12, 12, 12, 0.6);
+    border: 1px solid #191919;
+    border-radius: 4px;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 5px;
+    width: 330px;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+  }
+  html body .content .section4 .container .down .first .right .text1 .up {
+    margin: 0px;
+    justify-content: center;
+  }
+  html body .content .section4 .container .down .first .right .text1 .up p {
+    font-family: "Lemon Medium";
+    font-size: 14px;
+    line-height: 24px;
+    color: #E1E1E1;
+    margin: 0px;
+    margin-top: 20px;
+  }
+  html body .content .section4 .container .down .first .right .text1 .down {
+    margin: 0px;
+  }
+  html body .content .section4 .container .down .first .right .text1 .down p {
+    margin: 0px;
+    font-family: "Lemon Regular";
+    font-size: 9px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.54);
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  html body .content .section4 .container .down .second {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+  html body .content .section4 .container .down .second .left {
+    width: 330px;
+    height: 184px;
+    text-align: center;
+    background: rgba(12, 12, 12, 0.6);
+    border: 1px solid #191919;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+  }
+  html body .content .section4 .container .down .second .left img {
+    width: 85px;
+    height: 89px;
+    margin-bottom: 0px;
+    margin-top: 40px;
+    margin-left: 90px;
+  }
+  html body .content .section4 .container .down .second .left p {
+    font-family: "Lemon Bold";
+    font-size: 19px;
+    line-height: 30px;
+    color: #E1E1E1;
+    margin: 0px;
+    margin-top: 75px;
+  }
+  html body .content .section4 .container .down .second .right {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+    text-align: center;
+  }
+  html body .content .section4 .container .down .second .right .text1 {
+    background: #0C0C0C;
+    background: rgba(12, 12, 12, 0.6);
+    border: 1px solid #191919;
+    border-radius: 4px;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 5px;
+    width: 330px;
+    text-align: center;
+    height: 100px;
+  }
+  html body .content .section4 .container .down .second .right .text1 .up {
+    margin: 0px;
+    text-align: center;
+    justify-content: center;
+  }
+  html body .content .section4 .container .down .second .right .text1 .up p {
+    font-family: "Lemon Medium";
+    font-size: 14px;
+    line-height: 24px;
+    color: #E1E1E1;
+    margin: 0px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  html body .content .section4 .container .down .second .right .text1 .down {
+    margin: 0px;
+    text-align: center;
+  }
+  html body .content .section4 .container .down .second .right .text1 .down p {
+    text-align: center;
+    margin: 0px;
+    font-family: "Lemon Regular";
+    font-size: 9px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.54);
+    margin-top: 0px;
+    margin-bottom: 19px;
+  }
+  html body .content .section5 .container {
+    max-width: 330px;
+    margin: 0 auto;
+    margin-top: -80px;
+    margin-bottom: 0px;
+  }
+  html body .content .section5 .container #desktopquote {
+    display: none;
+    width: 715px;
+    margin: 0 auto;
+  }
+  html body .content .section5 .container #mobilequote {
+    width: 330px;
+    margin: 0 auto;
+  }
+  html body .content .section6 {
+    display: none;
+  }
+  html body .content .section6 .container {
+    max-width: 330px;
+    margin: 0 auto;
+    display: n;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  html body .content .section6 .container .up {
+    display: flex;
+    flex-direction: row;
+  }
+  html body .content .section6 .container .up .left img {
+    width: 146px;
+    margin: 0px;
+    margin-top: 35px;
+    margin-right: 100px;
+  }
+  html body .content .section6 .container .up .mid {
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section6 .container .up .mid .up p {
+    font-family: "Lemon Medium";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+  html body .content .section6 .container .up .mid .down {
+    margin-bottom: 35px;
+    text-align: start;
+    width: 148px;
+  }
+  html body .content .section6 .container .up .mid .down p {
+    margin: 0px;
+  }
+  html body .content .section6 .container .up .mid .down p a {
+    font-family: "Lemon Regular";
+    font-size: 10px;
+    line-height: 30px;
+    color: #A4ADB3;
+    margin: 0px;
+    margin-bottom: 0px;
+    transition: all 0.2s ease-in-out;
+  }
+  html body .content .section6 .container .up .mid .down p a:hover {
+    color: #9A9A9A;
+  }
+  html body .content .section6 .container .up #secondmid {
+    margin-left: 70px;
+  }
+  html body .content .section6 .container .up .right {
+    margin-top: 50px;
+    margin-left: 61.5px;
+  }
+  html body .content .section6 .container .up .right a {
+    font-family: "Lemon Bold";
+    padding: 7px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    background: #FFFF27;
+    border-radius: 3px;
+  }
+  html body .content .section6 .down {
+    text-align: center;
+  }
+  html body .content .section6 .down .line hr {
+    border: 2px solid #FFFFFF;
+    margin-bottom: 10px;
+  }
+  html body .content .section6 .down .text {
+    margin: 0px;
+  }
+  html body .content .section6 .down .text p {
+    font-family: "Lemon Regular";
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 13px;
+    color: #FFFFFF;
+    margin: 0px;
+    margin-bottom: 11px;
+  }
+  html body .content .section6mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section6mobile .up .container {
+    max-width: 330px;
+    margin: 0 auto;
+    display: n;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  html body .content .section6mobile .up .container .up1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  html body .content .section6mobile .up .container .up1 img {
+    width: 146.55px;
+  }
+  html body .content .section6mobile .up .container .up1 a {
+    font-family: "Lemon Bold";
+    padding: 12px;
+    font-size: 14px;
+    color: #000000;
+    background: #FFFF27;
+    border-radius: 3px;
+  }
+  html body .content .section6mobile .up .container .down1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+  html body .content .section6mobile .up .container .down1 .mid {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+  html body .content .section6mobile .up .container .down1 .mid .up p {
+    font-size: 16px;
+    line-height: 0px;
+  }
+  html body .content .section6mobile .up .container .down1 .mid .down p {
+    /* or 300% */
+    width: 100%;
+    color: #A4ADB3;
+    margin: 10px 0px;
+  }
+  html body .content .section6mobile .up .container .down1 .mid .down p a {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: "Lemon Regular";
+    color: #A4ADB3;
+    font-size: 10px;
+    line-height: 0px;
+  }
+  html body .content .section6mobile .up .container .down1 .mid .down p #leftinsta {
+    margin-left: -15px;
+  }
+  html body .content .section6mobile .up .container .down1 .mid .down p #lefttel {
+    margin-left: -10px;
+  }
+  html body .content .section6mobile .up .container .down1 #secondmid {
+    margin-left: 85px;
+  }
+  html body .content .section6mobile .down {
+    text-align: center;
+  }
+  html body .content .section6mobile .down .line hr {
+    border: 2px solid #FFFFFF;
+    margin-bottom: 10px;
+  }
+  html body .content .section6mobile .down .text {
+    margin: 0px;
+  }
+  html body .content .section6mobile .down .text p {
+    font-family: "Lemon Regular";
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 13px;
+    color: #FFFFFF;
+    margin: 0px;
+    margin-bottom: 9px;
+  }
+}/*# sourceMappingURL=style.css.map */
