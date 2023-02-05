@@ -1,0 +1,376 @@
+@font-face {
+    font-family: "Lemon Bold";
+    src: url("assets/fonts/LemonMilkProBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Lemon Bold Italic";
+    src: url("assets/fonts/LemonMilkProBoldItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Lemon Medium";
+    src: url("assets/fonts/LemonMilkProMedium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Lemon Medium Italic";
+    src: url("assets/fonts/LemonMilkProMediumItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Lemon Regular";
+    src: url("assets/fonts/LemonMilkProRegular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Lemon Regular Italic";
+    src: url("assets/fonts/LemonMilkProRegularItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Lemon UltraLight";
+    src: url("assets/fonts/LemonMilkProUltraLight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Lemon UltraLight Italic";
+    src: url("assets/fonts/LemonMilkProUltraLightItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Zacbelx Extrabold";
+    src: url("assets/fonts/zacbelx-extrabold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Zacbelx Medium";
+    src: url("assets/fonts/zacbelx-medium.ttf") format("truetype");
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    text-decoration: none;
+    color: white;
+}
+
+
+body {
+    width: 1280px;
+    margin: 0 auto;
+    background-color: #131313;
+
+    .modalproject1 {
+        width: 1120px;
+        margin: 0 auto;
+        background: #131313;
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+        border-radius: 3px;
+
+        .containerproject1 {
+            width: 1060px;
+            margin: 0 auto;
+
+
+            .upproject1 {
+                margin: 0px;
+                display: flex;
+                flex-direction: row;
+                padding-top: 30px;
+                justify-content: space-between;
+
+                .leftproject1 {
+                    display: flex;
+                    flex-direction: row;
+
+                    a {
+                        font-family: "Lemon Medium";
+                        font-size: 18px;
+                        line-height: 25px;
+                        color: #FFFFFF;
+                    }
+
+                    .changetovideoproject1 {
+                        border: none;
+                        cursor: pointer;
+                        appearance: none;
+                        background-color: inherit;
+                        margin-right: 50px;
+                        font-family: "Lemon Medium";
+                        font-size: 18px;
+                        line-height: 25px;
+                        color: #FFFFFF;
+                    }
+
+                    .changetoimagesproject1 {
+                        border: none;
+                        cursor: pointer;
+                        appearance: none;
+                        background-color: inherit;
+                        font-family: "Lemon Medium";
+                        font-size: 18px;
+                        line-height: 25px;
+                        color: #FFFF27;
+                    }
+
+                }
+
+                .rightproject1 {
+                    button {
+                        border: none;
+                        cursor: pointer;
+                        appearance: none;
+                        background-color: inherit;
+
+                        img {
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                }
+            }
+
+            .downproject1 {
+
+                .imagespartproject1 {
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 40px;
+                    justify-content: space-between;
+
+                    .leftproject1 {
+                        img {
+                            width: 550px;
+                            height: 550px;
+                            margin-bottom: 30px;
+                        }
+
+                        .project11image {
+                            width: 550px;
+                            height: 550px;
+                            display: block;
+                        }
+
+                        .project12image {
+                            width: 550px;
+                            height: 550px;
+                            display: none;
+                        }
+
+                        .project13image {
+                            width: 550px;
+                            height: 550px;
+                            display: none;
+                        }
+
+                        .project14image {
+                            width: 550px;
+                            height: 550px;
+                            display: none;
+                        }
+
+                        .project15image {
+                            width: 550px;
+                            height: 550px;
+                            display: none;
+                        }
+                    }
+
+                    .rightproject1 {
+                        max-width: 470px;
+
+                        .text1project1 {
+                            p {
+                                font-family: "Lemon Bold";
+                                font-size: 28px;
+                                line-height: 39px;
+                                color: #FFFFFF;
+                                margin: 0px;
+                            }
+                        }
+
+                        .text2project1 {
+                            p {
+                                font-family: "Lemon Regular";
+                                font-size: 12px;
+                                line-height: 30px;
+                                color: #C5CFD5;
+                                margin-top: 17px;
+                                margin-bottom: 15px;
+                            }
+                        }
+
+                        .selectionsproject1 {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+
+                            button {
+                                border: none;
+                                cursor: pointer;
+                                appearance: none;
+                                background-color: inherit;
+                                padding: 0px;
+                                margin: 3px;
+
+                                img {
+                                    width: 85px;
+                                    height: 85px;
+                                }
+                            }
+                        }
+
+                        .downparts {
+                            justify-content: center;
+                            text-align: center;
+                            display: flex;
+                            flex-direction: column;
+
+                            .ups {
+                                p {
+                                    font-family: "Lemon Regular";
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                    color: rgba(197, 207, 213, 0.7);
+                                    margin: 0px;
+                                    margin-bottom: 24px;
+                                    margin-top: 200px;
+                                }
+                            }
+
+                            .downs {
+                                img {
+                                    width: 60px;
+                                    height: 60px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .videopart {
+                    display: none;
+                    flex-direction: row;
+                    margin-top: 40px;
+                    justify-content: space-between;
+                
+                    .left {
+                        video {
+                            width: 737px;
+                            height: 737px;
+                            margin-bottom: 30px;
+                        }
+                
+                        .project11video {
+                            width: 737px;
+                            height: 737px;
+                            display: block;
+                        }
+                
+                        .project12video {
+                            width: 737px;
+                            height: 737px;
+                            display: none;
+                        }
+                
+                        .project13video {
+                            width: 737px;
+                            height: 737px;
+                            display: none;
+                        }
+                
+                        .project14video {
+                            width: 737px;
+                            height: 737px;
+                            display: none;
+                        }
+                
+                        .project15video {
+                            width: 737px;
+                            height: 737px;
+                            display: none;
+                        }
+                    }
+                
+                    .right {
+                        max-width: 280px;
+                
+                        .text1 {
+                            p {
+                                font-family: "Lemon Bold";
+                                font-size: 28px;
+                                line-height: 39px;
+                                color: #FFFFFF;
+                                margin: 0px;
+                            }
+                        }
+                
+                        .text2 {
+                            p {
+                                font-family: "Lemon Regular";
+                                font-size: 12px;
+                                line-height: 30px;
+                                color: #C5CFD5;
+                                margin-top: 17px;
+                                margin-bottom: 75px;
+                            }
+                        }
+                
+                        .selections {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                
+                            button {
+                                border: none;
+                                cursor: pointer;
+                                appearance: none;
+                                background-color: inherit;
+                                padding: 0px;
+                                margin: 3px;
+                
+                                video {
+                                    width: 85px;
+                                    height: 85px;
+                                }
+                            }
+                        }
+                
+                        .downparts {
+                            justify-content: center;
+                            text-align: center;
+                            display: flex;
+                            flex-direction: column;
+                
+                            .ups {
+                                p {
+                                    font-family: "Lemon Regular";
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                    color: rgba(197, 207, 213, 0.7);
+                                    margin: 0px;
+                                    margin-bottom: 24px;
+                                    margin-top: 200px;
+                                }
+                            }
+                
+                            .downs {
+                                img {
+                                    width: 60px;
+                                    height: 60px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                
+
+            }
+        }
+    }
+}

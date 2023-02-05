@@ -1,0 +1,304 @@
+@font-face {
+  font-family: "Lemon Bold";
+  src: url("assets/fonts/LemonMilkProBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon Bold Italic";
+  src: url("assets/fonts/LemonMilkProBoldItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon Medium";
+  src: url("assets/fonts/LemonMilkProMedium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon Medium Italic";
+  src: url("assets/fonts/LemonMilkProMediumItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon Regular";
+  src: url("assets/fonts/LemonMilkProRegular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon Regular Italic";
+  src: url("assets/fonts/LemonMilkProRegularItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon UltraLight";
+  src: url("assets/fonts/LemonMilkProUltraLight.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon UltraLight Italic";
+  src: url("assets/fonts/LemonMilkProUltraLightItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Zacbelx Extrabold";
+  src: url("assets/fonts/zacbelx-extrabold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Zacbelx Medium";
+  src: url("assets/fonts/zacbelx-medium.ttf") format("truetype");
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  width: 1280px;
+  margin: 0 auto;
+  background-color: #131313;
+}
+body .modalproject1 {
+  width: 1120px;
+  margin: 0 auto;
+  background: #131313;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+body .modalproject1 .containerproject1 {
+  width: 1060px;
+  margin: 0 auto;
+}
+body .modalproject1 .containerproject1 .upproject1 {
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+  justify-content: space-between;
+}
+body .modalproject1 .containerproject1 .upproject1 .leftproject1 {
+  display: flex;
+  flex-direction: row;
+}
+body .modalproject1 .containerproject1 .upproject1 .leftproject1 a {
+  font-family: "Lemon Medium";
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+body .modalproject1 .containerproject1 .upproject1 .leftproject1 .changetovideoproject1 {
+  border: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: inherit;
+  margin-right: 50px;
+  font-family: "Lemon Medium";
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+body .modalproject1 .containerproject1 .upproject1 .leftproject1 .changetoimagesproject1 {
+  border: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: inherit;
+  font-family: "Lemon Medium";
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFF27;
+}
+body .modalproject1 .containerproject1 .upproject1 .rightproject1 button {
+  border: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: inherit;
+}
+body .modalproject1 .containerproject1 .upproject1 .rightproject1 button img {
+  width: 18px;
+  height: 18px;
+}
+body .modalproject1 .containerproject1 .downproject1 .imagespartproject1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+body .modalproject1 .containerproject1 .downproject1 .imagespartproject1 .leftproject1 img {
+  width: 550px;
+  height: 550px;
+  margin-bottom: 30px;
+}
+body .modalproject1 .containerproject1 .downproject1 .imagespartproject1 .leftproject1 .project11image {
+  width: 550px;
+  height: 550px;
+  display: block;
+}
+body .modalproject1 .containerproject1 .downproject1 .imagespartproject1 .leftproject1 .project12image {
+  width: 550px;
+  height: 550px;
+  display: none;
+}
+body .modalproject1 .containerproject1 .downproject1 .imagespartproject1 .leftproject1 .project13image {
+  width: 550px;
+  height: 550px;
+  display: none;
+}
+body .modalproject1 .containerproject1 .downproject1 .imagespartproject1 .leftproject1 .project14image {
+  width: 550px;
+  height: 550px;
+  display: none;
+}
+body .modalproject1 .containerproject1 .downproject1 .imagespartproject1 .leftproject1 .project15image {
+  width: 550px;
+  height: 550px;
+  display: none;
+}
+body .modalproject1 .containerproject1 .downproject1 .imagespartproject1 .rightproject1 {
+  max-width: 470px;
+}
+body .modalproject1 .containerproject1 .downproject1 .imagespartproject1 .rightproject1 .text1project1 p {
+  font-family: "Lemon Bold";
+  font-size: 28px;
+  line-height: 39px;
+  color: #FFFFFF;
+  margin: 0px;
+}
+body .modalproject1 .containerproject1 .downproject1 .imagespartproject1 .rightproject1 .text2project1 p {
+  font-family: "Lemon Regular";
+  font-size: 12px;
+  line-height: 30px;
+  color: #C5CFD5;
+  margin-top: 17px;
+  margin-bottom: 15px;
+}
+body .modalproject1 .containerproject1 .downproject1 .imagespartproject1 .rightproject1 .selectionsproject1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body .modalproject1 .containerproject1 .downproject1 .imagespartproject1 .rightproject1 .selectionsproject1 button {
+  border: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: inherit;
+  padding: 0px;
+  margin: 3px;
+}
+body .modalproject1 .containerproject1 .downproject1 .imagespartproject1 .rightproject1 .selectionsproject1 button img {
+  width: 85px;
+  height: 85px;
+}
+body .modalproject1 .containerproject1 .downproject1 .imagespartproject1 .rightproject1 .downparts {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+body .modalproject1 .containerproject1 .downproject1 .imagespartproject1 .rightproject1 .downparts .ups p {
+  font-family: "Lemon Regular";
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(197, 207, 213, 0.7);
+  margin: 0px;
+  margin-bottom: 24px;
+  margin-top: 200px;
+}
+body .modalproject1 .containerproject1 .downproject1 .imagespartproject1 .rightproject1 .downparts .downs img {
+  width: 60px;
+  height: 60px;
+}
+body .modalproject1 .containerproject1 .downproject1 .videopart {
+  display: none;
+  flex-direction: row;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+body .modalproject1 .containerproject1 .downproject1 .videopart .left video {
+  width: 737px;
+  height: 737px;
+  margin-bottom: 30px;
+}
+body .modalproject1 .containerproject1 .downproject1 .videopart .left .project11video {
+  width: 737px;
+  height: 737px;
+  display: block;
+}
+body .modalproject1 .containerproject1 .downproject1 .videopart .left .project12video {
+  width: 737px;
+  height: 737px;
+  display: none;
+}
+body .modalproject1 .containerproject1 .downproject1 .videopart .left .project13video {
+  width: 737px;
+  height: 737px;
+  display: none;
+}
+body .modalproject1 .containerproject1 .downproject1 .videopart .left .project14video {
+  width: 737px;
+  height: 737px;
+  display: none;
+}
+body .modalproject1 .containerproject1 .downproject1 .videopart .left .project15video {
+  width: 737px;
+  height: 737px;
+  display: none;
+}
+body .modalproject1 .containerproject1 .downproject1 .videopart .right {
+  max-width: 280px;
+}
+body .modalproject1 .containerproject1 .downproject1 .videopart .right .text1 p {
+  font-family: "Lemon Bold";
+  font-size: 28px;
+  line-height: 39px;
+  color: #FFFFFF;
+  margin: 0px;
+}
+body .modalproject1 .containerproject1 .downproject1 .videopart .right .text2 p {
+  font-family: "Lemon Regular";
+  font-size: 12px;
+  line-height: 30px;
+  color: #C5CFD5;
+  margin-top: 17px;
+  margin-bottom: 75px;
+}
+body .modalproject1 .containerproject1 .downproject1 .videopart .right .selections {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body .modalproject1 .containerproject1 .downproject1 .videopart .right .selections button {
+  border: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: inherit;
+  padding: 0px;
+  margin: 3px;
+}
+body .modalproject1 .containerproject1 .downproject1 .videopart .right .selections button video {
+  width: 85px;
+  height: 85px;
+}
+body .modalproject1 .containerproject1 .downproject1 .videopart .right .downparts {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+body .modalproject1 .containerproject1 .downproject1 .videopart .right .downparts .ups p {
+  font-family: "Lemon Regular";
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(197, 207, 213, 0.7);
+  margin: 0px;
+  margin-bottom: 24px;
+  margin-top: 200px;
+}
+body .modalproject1 .containerproject1 .downproject1 .videopart .right .downparts .downs img {
+  width: 60px;
+  height: 60px;
+}/*# sourceMappingURL=test.css.map */
