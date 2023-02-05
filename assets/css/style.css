@@ -2491,6 +2491,7 @@ p {
     padding: 10px 13px;
   }
   html body .content .section1 .container .left .buttons .button1 a span {
+    display: none;
     margin-top: -3px;
     margin-bottom: -4px;
     overflow: hidden;
