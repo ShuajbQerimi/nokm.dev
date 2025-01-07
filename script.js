@@ -60,19 +60,35 @@ class TextScramble {
 // Example
 // ——————————————————————————————————————————————————
 
+// const phrases = [
+// 'Hey my friend,',
+// 'nokm.dev is getting updated',
+// 'but,',
+// 'sooner or later',
+// 'you\'re going to realize',
+// 'just as I did',
+// 'that there\'s a difference',
+// 'between knowing the path',
+// 'and walking the path!',
+// 'nokm.dev',
+// ''
+// ];
+
 const phrases = [
-'Hey my friend,',
-'nokm.dev is getting updated',
-'but,',
-'sooner or later',
-'you\'re going to realize',
-'just as I did',
-'that there\'s a difference',
+'Hey, my friend,',
+'while the website is currently being updated,',
+'we want to remind you that',
+'there’s a difference',
 'between knowing the path',
-'and walking the path!',
-'nokm.dev',
+'and walking the path.',
+'We’re here to walk that path with you,',
+'delivering cutting-edge development solutions.',
+'Stay tuned for the launch of something exceptional.',
+'nokm.dev – Walking the Path of Excellence.',
 ''
 ];
+
+
 
 
 const el = document.querySelector('.text');
