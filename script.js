@@ -84,7 +84,7 @@ const phrases = [
 'We’re here to walk that path with you,',
 'delivering cutting-edge development solutions.',
 'Stay tuned for the launch of something exceptional.',
-'nokm.dev – Ideas into Reality.',
+'nokm.dev – Transforming Ideas to Reality.',
 ''
 ];
 
